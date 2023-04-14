@@ -31,10 +31,12 @@
 #ifndef UCAPS_H
 #define UCAPS_H
 
+#include <stdint.h>
+
 //satan invented unicode?
 #define CAPS_LEN 666
 
-static const int caps_table[CAPS_LEN][2] = {
+static const uint16_t caps_table[CAPS_LEN][2] = {
 	{ 0x0061, 0x0041 },
 	{ 0x0062, 0x0042 },
 	{ 0x0063, 0x0043 },
@@ -703,7 +705,7 @@ static const int caps_table[CAPS_LEN][2] = {
 	{ 0xFF5A, 0xFF3A },
 };
 
-static const int reverse_caps_table[CAPS_LEN - 1][2] = {
+static const uint16_t reverse_caps_table[CAPS_LEN - 1][2] = {
 	{ 0x0041, 0x0061 },
 	{ 0x0042, 0x0062 },
 	{ 0x0043, 0x0063 },
